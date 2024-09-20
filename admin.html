@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">Admin Dashboard</div>
+        <div class="navbar-right">
+            <a href="#">Home</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="portal">
+            <h1>Registration Form</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="text" id="cnic" placeholder="CNIC" required>
+            <button id="submitBtn" type="submit">Submit</button>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Email</th>
+                <th>CNIC</th>
+            </tr>
+        </thead>
+        <tbody id="student_list"></tbody>
+    </table>
+
+    <script src="./app.js" type="module"></script>
+</body>
+</html>
